@@ -22,12 +22,12 @@ print(f"Using n_jobs = {n_jobs}")
 
 
 class TimeStepClassifier:
-    """Decision Tree Timeseries Annotator.
+    """Decision Tree TimeStepClassifier.
 
     This class provides a consistent interface that can be used with other
     TimeStepClassifier models.
     """
-    MODEL_NAME = "Decision_Tree_Timeseries_Annotator"
+    MODEL_NAME = "Decision_Tree_TimeStepClassifier"
 
     def __init__(
         self,
@@ -195,7 +195,7 @@ def predict_with_model(model: TimeStepClassifier, test_data: np.ndarray) -> np.n
 
     Args:
         model (TimeStepClassifier): The TimeStepClassifier model.
-        test_data (np.ndarray): The test input data for annotation.
+        test_data (np.ndarray): The test input data for Classifier.
 
     Returns:
         np.ndarray: The annotated data.
